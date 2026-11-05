@@ -1,18 +1,18 @@
 
 const samples = [
   {
-    title: "Contact Us Form",
-    description: "A basic Adaptive Form for collecting customer inquiries.",
+    title: "Headless AEM Forms with Adobe Acrobat Sign",
+    description: "Experience a seamless integration of Headless Adaptive Forms and Adobe Acrobat Sign",
     category: "Basic Forms",
     icon: "📩",
-    url: ""
+    url: "https://ic-document-service.onrender.com/registration"
   },
   {
-    title: "Registration Form",
-    description: "User registration with required fields and validation.",
+    title: "Generic Map Component",
+    description: "Create a generic map component to display form submissions by state",
     category: "Basic Forms",
     icon: "📝",
-    url: ""
+    url: "https://publish-p133654-e1305513.adobeaemcloud.com/content/bankingapplication/us/forms-dashboard.html"
   },
   {
     title: "Loan Application",
