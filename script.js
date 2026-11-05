@@ -15,11 +15,11 @@ const samples = [
     url: "https://publish-p133654-e1305513.adobeaemcloud.com/content/bankingapplication/us/forms-dashboard.html"
   },
   {
-    title: "Loan Application",
-    description: "Multi-step application with conditional fields.",
+    title: "Headless Rendering of AEM Adaptive Forms with Node.js",
+    description: "This demo showcases how Adobe Experience Manager (AEM) Adaptive Forms can be dynamically rendered in a custom Node.js application using a headless approach.",
     category: "Financial Services",
     icon: "🏦",
-    url: ""
+    url: "https://aem-headless-adaptive-form.onrender.com/"
   },
   {
     title: "Insurance Application",
