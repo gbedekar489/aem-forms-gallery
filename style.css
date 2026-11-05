@@ -1,0 +1,261 @@
+
+:root {
+  --accent: #eb1000;
+  --text: #242424;
+  --muted: #666;
+  --border: #e5e5e5;
+  --background: #f7f8fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--background);
+}
+
+.site-header {
+  background: white;
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.brand-icon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  background: var(--accent);
+  color: white;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.header-label {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 24px 80px;
+}
+
+.hero {
+  margin-bottom: 42px;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.hero h1 {
+  font-size: clamp(30px, 5vw, 44px);
+  letter-spacing: -1px;
+  margin: 14px 0;
+}
+
+.hero p {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 650px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.search-wrapper {
+  width: 100%;
+  max-width: 420px;
+}
+
+.search-wrapper input {
+  width: 100%;
+  padding: 13px 16px;
+  border: 1px solid #d5d5d5;
+  border-radius: 9px;
+  background: white;
+  font: inherit;
+}
+
+.search-wrapper input:focus {
+  outline: 2px solid #1473e6;
+  outline-offset: 2px;
+}
+
+#resultCount {
+  color: var(--muted);
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  border: 1px solid #ddd;
+  background: white;
+  color: #444;
+  border-radius: 30px;
+  padding: 9px 17px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.filter-btn:hover {
+  border-color: #888;
+}
+
+.filter-btn.active {
+  background: #242424;
+  color: white;
+  border-color: #242424;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fill, minmax(270px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 26px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.09);
+}
+
+.card:focus-visible {
+  outline: 3px solid #1473e6;
+  outline-offset: 3px;
+}
+
+.card-icon {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  background: #fff0ef;
+  border-radius: 12px;
+  font-size: 27px;
+  margin-bottom: 24px;
+}
+
+.category {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.card h2 {
+  font-size: 19px;
+  margin: 12px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.65;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.card-link {
+  color: #1473e6;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 24px;
+}
+
+.empty-state {
+  padding: 40px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 24px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 35px 18px 60px;
+  }
+
+  .toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .search-wrapper {
+    max-width: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+}

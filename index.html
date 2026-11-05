@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="Explore AEM Forms samples and demos">
+  <title>AEM Forms Sample Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-icon">A</span>
+        <span>AEM Forms</span>
+      </div>
+      <span class="header-label">Sample Gallery</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <span class="eyebrow">EXPLORE & LEARN</span>
+      <h1>AEM Forms Sample Gallery</h1>
+      <p>
+        Discover interactive Adaptive Forms examples,
+        explore capabilities, and launch live demos.
+      </p>
+    </section>
+
+    <section class="gallery" aria-label="Forms gallery">
+      <div class="toolbar">
+        <div class="search-wrapper">
+          <label for="searchInput" class="sr-only">
+            Search samples
+          </label>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Search forms and samples..."
+          >
+        </div>
+        <span id="resultCount" aria-live="polite"></span>
+      </div>
+
+      <div id="categoryFilters"
+           class="filters"
+           aria-label="Filter by category">
+      </div>
+
+      <div id="sampleGrid" class="card-grid"></div>
+
+      <p id="emptyState" class="empty-state" hidden>
+        No matching samples found.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>AEM Forms Sample Gallery</p>
+  </footer>
+</body>
+</html>
