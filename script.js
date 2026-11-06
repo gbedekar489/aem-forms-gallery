@@ -22,18 +22,18 @@ const samples = [
     url: "https://aem-headless-adaptive-form.onrender.com/"
   },
   {
-    title: "Insurance Application",
-    description: "Dynamic form experience for insurance applications.",
+    title: "Embed PDF Component – AEM as a Cloud Service",
+    description: "he component integrates with AEM Adaptive Forms and Adobe Interactive Communications to generate personalized PDF documents based on user-entered form data.",
     category: "Financial Services",
     icon: "🛡️",
-    url: ""
+    url: "https://publish-p133654-e1305513.adobeaemcloud.com/content/dam/formsanddocuments/customfunctions/jcr:content?wcmmode=disabled"
   },
   {
-    title: "Employee Onboarding",
-    description: "Collect employee information using Adaptive Forms.",
-    category: "HR",
-    icon: "👤",
-    url: ""
+    title: "AJO Offer Decisioning",
+    description: "Display offers based on income",
+    category: "Financial Services",
+    icon: "🛡️",
+    url: "https://publish-p133654-e1305513.adobeaemcloud.com/content/bankingapplication/us/membership.html"
   },
   {
     title: "Customer Feedback",
